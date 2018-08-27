@@ -1,0 +1,18 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+# Install some dependencies
+RUN apk add yarn
+
+COPY package.json .
+
+# Run yarn command to install project dependencies
+RUN yarn
+
+COPY . .
+
+CMD ["yarn", "start"]
+
+
+
