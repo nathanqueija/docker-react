@@ -1,6 +1,12 @@
 # Using docker and it requires super user permissions
 sudo: required
+
 services:
   - docker
+
 before_install:
   - docker build -t nathanqueija/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run nathanqueija/docker-react yarn test
+
