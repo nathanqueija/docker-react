@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React with CI/CD workflow</h1>
         </header>
-        <p className="App-intro">It works!</p>
+        <p className="App-intro">Using Travis CI and Amazon Elastic bean</p>
       </div>
     );
   }
